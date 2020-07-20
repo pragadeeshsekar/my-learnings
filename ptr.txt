@@ -1,0 +1,9 @@
+port 7000/tcp --> used for inter-node cluster communication
+port 9042/tcp --> used for cqlsh communication (client port)
+
+both the above ports must be allowed by firewall for communication to happen within & outside cassandra.
+
+Normal RDBMS :    DataBase        |   Table
+Cassandra    :    Keyspace        |   Column
+
+Each Row in cassandra is identified by Primary Key 
